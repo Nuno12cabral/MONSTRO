@@ -1,0 +1,180 @@
+/* Atualizando o CSS fornecido com base no novo HTML e estrutura moderna */
+
+/* css atualizado */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    color: white;
+}
+
+.slider .list {
+    position: relative;
+    height: 100%;
+}
+
+.slider .list .item {
+    display: none;
+    position: absolute;
+    inset: 0;
+    padding: 60px;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+}
+
+.slider .list .item.active {
+    display: block;
+    z-index: 1;
+}
+
+.slider .list .item .content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.slider .list .item .title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.slider .list .item .type {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #14ff72;
+}
+
+.slider .list .item .description {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.slider .list .item .button {
+    margin-top: 20px;
+}
+
+.slider .list .item .button button {
+    background: #14ff72;
+    border: none;
+    padding: 10px 25px;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slider .list .item .button button:hover {
+    background: #12e562;
+}
+
+.thumbnail {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.thumbnail .item img {
+    width: 100px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail .item img:hover {
+    transform: scale(1.05);
+}
+
+.nextPrevArrows {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+}
+
+.nextPrevArrows button {
+    background-color: #14ff72;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.nextPrevArrows button:hover {
+    background-color: #12e562;
+}
+
+.locacao-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.locacao-info .info-icon {
+    max-width: 140px;
+}
+
+.locacao-info .info-icon img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.locacao-info .info-icon p {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Ajustes para seções adicionais (How it works, Testemunhos, Blog etc.) */
+.ftco-section {
+    padding: 60px 0;
+}
+
+.heading-section h2,
+.heading-section-white h2 {
+    font-weight: 700;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
